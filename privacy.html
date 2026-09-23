@@ -118,8 +118,17 @@
         <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the updated policy will reflect the new effective date. We encourage you to review this policy periodically.</p>
 
         <footer>
-            &copy; 2026 Winwrx, LLC &middot; Portland, Oregon &middot; <a href="mailto:help@winwrx.com">help@winwrx.com</a>
+            &copy; 2026 Winwrx, LLC &middot; Portland, Oregon &middot; <a class="mail" data-u="help" data-d="winwrx.com">help at winwrx dot com</a>
         </footer>
     </div>
+    <script>
+        // The address is put together here rather than written in the page, so the
+        // scrapers that read raw HTML never see it.
+        document.querySelectorAll("a.mail").forEach(function (a) {
+            var addr = a.dataset.u + "@" + a.dataset.d;
+            a.href = "mailto:" + addr;
+            a.textContent = addr;
+        });
+    </script>
 </body>
 </html>
