@@ -4,60 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - winwrx</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #000;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            border-radius: 8px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #ff6600;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 20px;
-        }
-
-        a {
-            color: #ff6600;
-            text-decoration: none;
-        }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-bottom: 100px;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="doc">
+    <a class="top" href="index.html"><img src="winwrx-logo.png" alt="winwrx"></a>
     <div class="container">
         <header>
             <h1>winwrx terms of service</h1>
@@ -113,10 +67,19 @@
 
         <h2>15. Changes to the Terms</h2>
         <p>We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
-
-        <footer>
-            &copy; 2025 winwrx - All rights reserved
-        </footer>
     </div>
+    <footer>
+        &copy; 2026 Winwrx, LLC - all rights reserved &middot; <a class="mail" data-u="help" data-d="winwrx.com">help at winwrx dot com</a>
+    </footer>
+    </div>
+    <script>
+        // The address is put together here rather than written in the page, so the
+        // scrapers that read raw HTML never see it.
+        document.querySelectorAll("a.mail").forEach(function (a) {
+            var addr = a.dataset.u + "@" + a.dataset.d;
+            a.href = "mailto:" + addr;
+            a.textContent = addr;
+        });
+    </script>
 </body>
 </html>

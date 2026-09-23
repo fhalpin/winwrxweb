@@ -4,108 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WinWrx - Home</title>
-    <style>
-
-        .btn {
-            display: inline-block;
-            background-color: #ff6600;
-            color: #fff;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #e55a00;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        header {
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        img {
-            max-width: 300px;
-        }
-
-        .tagline {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff6600;
-            margin-top: 10px;
-        }
-
-        .content {
-            margin-top: 40px;
-        }
-
-            .content h1 {
-                font-size: 2.5rem;
-                color: #000;
-            }
-
-        .cta-buttons {
-            margin-top: 20px;
-        }
-
-            .cta-buttons button {
-                background-color: #ff6600;
-                color: #fff;
-                font-size: 1rem;
-                font-weight: bold;
-                border: none;
-                border-radius: 5px;
-                padding: 10px 20px;
-                margin: 10px;
-                cursor: pointer;
-                transition: background-color 0.3s ease;
-            }
-
-                .cta-buttons button:hover {
-                    background-color: #e55a00;
-                }
-
-        footer {
-            margin-top: auto;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="winwrx-01.jpg" alt="WinWrx Logo">
-    </header>
-    <div class="content">
-        <p>Services &amp; sign-up options coming soon ...</p>
-        <div class="cta-buttons">
+    <main class="hold">
+        <img class="logo" src="winwrx-logo.png" alt="winwrx - the win is on">
+        <p class="soon">Services &amp; sign-up options coming soon&hellip;</p>
+        <div class="btns">
             <a href="privacy.html" class="btn">Privacy Policy</a>
             <a href="terms.html" class="btn">Terms of Service</a>
         </div>
-    </div>
-
-    <footer>
-        &copy; 2026 Winwrx, LLC - all rights reserved &middot; <a class="mail" data-u="help" data-d="winwrx.com">help at winwrx dot com</a>
-    </footer>
+        <footer>
+            &copy; 2026 Winwrx, LLC - all rights reserved &middot; <a class="mail" data-u="help" data-d="winwrx.com">help at winwrx dot com</a>
+        </footer>
+    </main>
     <script>
         // The address is put together here rather than written in the page, so the
         // scrapers that read raw HTML never see it.
