@@ -1,35 +1,78 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="google-adsense-account" content="ca-pub-6099038135596862">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinWrx - Home</title>
+    <title>Winwrx</title>
+    <meta name="description" content="Winwrx, LLC builds and operates a rewards platform for creators: a branded website, app, and store with streams, games, points, giveaways, and memberships.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="hold">
-        <img class="logo" src="winwrx-logo.png" alt="winwrx - the win is on">
-        <p class="soon">Services &amp; sign-up options coming soon&hellip;</p>
-        <div class="btns">
-            <a href="privacy.html" class="btn">Privacy Policy</a>
-            <a href="terms.html" class="btn">Terms of Service</a>
-        </div>
+    <main class="page">
+        <header class="brand">
+            <img class="logo" src="winwrx-logo.png" alt="winwrx - the win is on">
+        </header>
+
+        <section class="intro">
+            <h1>The rewards platform for creators.</h1>
+            <p class="lede">
+                Winwrx, LLC builds and operates a rewards platform for creators, streamers, and
+                podcasters. Every partner gets their own branded website and mobile app,
+                with streams, comments, games, streaks, points, merchandise, giveaways,
+                memberships, and a store with entries built in, all working together.
+            </p>
+            <p class="lede">
+                Fans follow their creator, play, shop, and enter giveaways in one place, and the
+                creator earns every day instead of only when a new post goes out.
+            </p>
+        </section>
+
+        <section class="what">
+            <h2>What we provide</h2>
+            <ul class="grid">
+                <li><strong>Website and app</strong>A branded storefront on the web and in the app stores, carrying the creator's own name and look.</li>
+                <li><strong>Store</strong>Merchandise and digital items, with checkout, order handling, and shipping.</li>
+                <li><strong>Games and points</strong>Games fans play for points, which they put toward giveaway entries.</li>
+                <li><strong>Giveaways</strong>Sweepstakes with entries, drawings, winner notices, and the paperwork that follows.</li>
+                <li><strong>Memberships</strong>Paid monthly plans with recurring billing and member-only perks.</li>
+                <li><strong>Streams</strong>A creator's posts gathered from the places they already publish, kept in sync.</li>
+            </ul>
+        </section>
+
+        <section class="block" id="sms">
+            <h2>Text messages</h2>
+            <p>
+                Winwrx sends one-time sign-in codes by text message to people who sign in to a
+                winwrx website or app with their mobile number. A code is sent only when the
+                person asks for one, at the moment they ask. We do not send marketing or
+                promotional text messages.
+            </p>
+            <p>
+                Message frequency varies. Message and data rates may apply. Reply STOP to opt out
+                or HELP for help. See our <a href="privacy.html#sms">Privacy Policy</a> and
+                <a href="terms.html">Terms of Service</a> for the full program details.
+            </p>
+        </section>
+
+        <section class="block" id="contact">
+            <h2>Contact us</h2>
+            <p>
+                We are onboarding our first partners now. For partnership, support, or press,
+                email <a href="mailto:help@winwrx.com">help@winwrx.com</a> and a person will
+                reply.
+            </p>
+            <p class="org">Winwrx, LLC &middot; United States</p>
+        </section>
+
         <footer>
-            &copy; 2026 Winwrx, LLC - all rights reserved &middot; <a class="mail" data-u="help" data-d="winwrx.com">help at winwrx dot com</a>
+            &copy; 2026 Winwrx, LLC &middot; All Rights Reserved &middot;
+            <a href="privacy.html">Privacy Policy</a> &middot;
+            <a href="terms.html">Terms of Service</a>
         </footer>
     </main>
-    <script>
-        // The address is put together here rather than written in the page, so the
-        // scrapers that read raw HTML never see it.
-        document.querySelectorAll("a.mail").forEach(function (a) {
-            var addr = a.dataset.u + "@" + a.dataset.d;
-            a.href = "mailto:" + addr;
-            a.textContent = addr;
-        });
-    </script>
 </body>
 </html>
